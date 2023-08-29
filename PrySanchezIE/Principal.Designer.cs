@@ -1,6 +1,6 @@
 ﻿namespace PrySanchezIE
 {
-    partial class Principal
+    partial class frmPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.treeView2 = new System.Windows.Forms.TreeView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verListasDePreciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // treeView1
+            // menuStrip1
             // 
-            this.treeView1.Location = new System.Drawing.Point(84, 55);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(221, 178);
-            this.treeView1.TabIndex = 0;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestionToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // treeView2
+            // gestionToolStripMenuItem
             // 
-            this.treeView2.Location = new System.Drawing.Point(395, 55);
-            this.treeView2.Name = "treeView2";
-            this.treeView2.Size = new System.Drawing.Size(233, 178);
-            this.treeView2.TabIndex = 1;
+            this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.proveedoresToolStripMenuItem});
+            this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
+            this.gestionToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.gestionToolStripMenuItem.Text = "Gestion";
             // 
-            // Principal
+            // proveedoresToolStripMenuItem
+            // 
+            this.proveedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verListasDePreciosToolStripMenuItem});
+            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            // 
+            // verListasDePreciosToolStripMenuItem
+            // 
+            this.verListasDePreciosToolStripMenuItem.Name = "verListasDePreciosToolStripMenuItem";
+            this.verListasDePreciosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verListasDePreciosToolStripMenuItem.Text = "Ver Listas de Precios";
+            // 
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.treeView2);
-            this.Controls.Add(this.treeView1);
-            this.Name = "Principal";
-            this.Text = "Principal";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "frmPrincipal";
+            this.Text = "Sistema de Gestion de Ventas";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.TreeView treeView2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem gestionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verListasDePreciosToolStripMenuItem;
     }
 }

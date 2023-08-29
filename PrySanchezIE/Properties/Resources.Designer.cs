@@ -63,10 +63,20 @@ namespace PrySanchezIE.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imagen_seguro {
+        internal static System.Drawing.Bitmap imagenseguro {
             get {
-                object obj = ResourceManager.GetObject("imagen seguro", resourceCulture);
+                object obj = ResourceManager.GetObject("imagenseguro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon imagenseguro1 {
+            get {
+                object obj = ResourceManager.GetObject("imagenseguro1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

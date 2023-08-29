@@ -1,6 +1,6 @@
 ﻿namespace PrySanchezIE
 {
-    partial class Form1
+    partial class frmLogo
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -39,18 +39,22 @@
             this.btnIniciar.TabIndex = 0;
             this.btnIniciar.Text = "Iniciar Sistema";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
-            // Form1
+            // frmLogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PrySanchezIE.Properties.Resources.imagen_seguro;
+            this.BackgroundImage = global::PrySanchezIE.Properties.Resources.imagenseguro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnIniciar);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmLogo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Gestion";
+            this.Load += new System.EventHandler(this.frmLogo_Load);
             this.ResumeLayout(false);
 
         }
