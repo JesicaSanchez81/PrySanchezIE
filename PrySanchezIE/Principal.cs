@@ -16,5 +16,12 @@ namespace PrySanchezIE
         {
             InitializeComponent();
         }
+
+        private void verListasDePreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListarProveedor ventanaListarProveedor = new frmListarProveedor();
+
+            ventanaListarProveedor.ShowDialog();
+        }
     }
 }

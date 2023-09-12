@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnIniciar = new System.Windows.Forms.Button();
+            this.barraDeCarga = new System.Windows.Forms.ProgressBar();
+            this.reloj = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(306, 396);
+            this.btnIniciar.Location = new System.Drawing.Point(12, 12);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(208, 42);
             this.btnIniciar.TabIndex = 0;
             this.btnIniciar.Text = "Iniciar Sistema";
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // barraDeCarga
+            // 
+            this.barraDeCarga.Location = new System.Drawing.Point(214, 415);
+            this.barraDeCarga.Name = "barraDeCarga";
+            this.barraDeCarga.Size = new System.Drawing.Size(370, 23);
+            this.barraDeCarga.TabIndex = 1;
+            // 
+            // reloj
+            // 
+            this.reloj.Tick += new System.EventHandler(this.reloj_Tick);
             // 
             // frmLogo
             // 
@@ -48,6 +62,7 @@
             this.BackgroundImage = global::PrySanchezIE.Properties.Resources.imagenseguro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.barraDeCarga);
             this.Controls.Add(this.btnIniciar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -62,6 +77,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.ProgressBar barraDeCarga;
+        private System.Windows.Forms.Timer reloj;
     }
 }
 
