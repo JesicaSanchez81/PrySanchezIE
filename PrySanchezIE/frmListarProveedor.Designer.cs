@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblMostrar = new System.Windows.Forms.Label();
             this.grilla = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,16 +40,9 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.Numero = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
+            this.lblMostrar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblMostrar
-            // 
-            this.lblMostrar.Location = new System.Drawing.Point(30, 32);
-            this.lblMostrar.Name = "lblMostrar";
-            this.lblMostrar.Size = new System.Drawing.Size(644, 207);
-            this.lblMostrar.TabIndex = 0;
-            this.lblMostrar.Text = "label1";
             // 
             // grilla
             // 
@@ -64,7 +56,7 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.grilla.Location = new System.Drawing.Point(33, 233);
+            this.grilla.Location = new System.Drawing.Point(12, 225);
             this.grilla.Name = "grilla";
             this.grilla.Size = new System.Drawing.Size(755, 193);
             this.grilla.TabIndex = 1;
@@ -122,7 +114,7 @@
             // Numero
             // 
             this.Numero.AutoSize = true;
-            this.Numero.Location = new System.Drawing.Point(218, 461);
+            this.Numero.Location = new System.Drawing.Point(214, 470);
             this.Numero.Name = "Numero";
             this.Numero.Size = new System.Drawing.Size(44, 13);
             this.Numero.TabIndex = 3;
@@ -135,16 +127,25 @@
             this.txtNumero.Size = new System.Drawing.Size(100, 20);
             this.txtNumero.TabIndex = 4;
             // 
+            // lblMostrar
+            // 
+            this.lblMostrar.AutoSize = true;
+            this.lblMostrar.Location = new System.Drawing.Point(79, 155);
+            this.lblMostrar.Name = "lblMostrar";
+            this.lblMostrar.Size = new System.Drawing.Size(42, 13);
+            this.lblMostrar.TabIndex = 5;
+            this.lblMostrar.Text = "Mostrar";
+            // 
             // frmListarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 510);
+            this.Controls.Add(this.lblMostrar);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.Numero);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.grilla);
-            this.Controls.Add(this.lblMostrar);
             this.Name = "frmListarProveedor";
             this.Text = "frmListarProveedor";
             this.Load += new System.EventHandler(this.frmListarProveedor_Load);
@@ -155,8 +156,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblMostrar;
         private System.Windows.Forms.DataGridView grilla;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -169,5 +168,6 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label Numero;
         private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Label lblMostrar;
     }
 }

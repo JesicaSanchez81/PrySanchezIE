@@ -46,5 +46,10 @@ namespace PrySanchezIE
                 barraDeCarga.Value += 5;
             }
         }
+
+        private void barraDeCarga_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
