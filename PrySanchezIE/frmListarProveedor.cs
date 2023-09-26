@@ -102,5 +102,10 @@ namespace PrySanchezIE
 
             ProcedimientoCargarGrilla();
         }
+
+        private void grilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
