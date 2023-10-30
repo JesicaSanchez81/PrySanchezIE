@@ -30,6 +30,7 @@ namespace PrySanchezIE
             while (!leerArchivo.EndOfStream)
             {
                lblMostrar.Text += leerArchivo.ReadLine();
+
             }
 
             leerArchivo.Close();
@@ -40,7 +41,7 @@ namespace PrySanchezIE
 
         private void ProcedimientoCargarGrilla()
         {
-            grilla.Rows.Clear();
+            dgvDatos.Rows.Clear();
 
             //CARGAR LA GRILLA CON LOS DATOS
             StreamReader leerArchivoGrilla = new StreamReader("baseproveedores.csv");
@@ -51,7 +52,7 @@ namespace PrySanchezIE
              
                 separarTexto = leerLinea.Split(';');
 
-                grilla.Rows.Add(separarTexto);
+                dgvDatos.Rows.Add(separarTexto);
 
             }
 
@@ -91,13 +92,19 @@ namespace PrySanchezIE
             //que hay que verificar que el codigo no sea duplicado
             StreamWriter escribirArchivo = new StreamWriter("baseproveedores.csv", true);
 
-            escribirArchivo.WriteLine(txtNumero.Text);
+            escribirArchivo.WriteLine(txtNumero.Text + ";" + txtDireccion.Text + ";" + txtEntidad.Text + ";" + txtApertura.Text + ";" + txtExpendiente.Text + ";" + txtJurisdiccion.Text +";" + txtJuzgado.Text +";" + txtLiquidador.Text + ";");
             //cargar las otras columnas
 
             escribirArchivo.Close();
 
             MessageBox.Show("Registro...");
             txtNumero.Text = "";
+            txtEntidad.Text = "";
+            txtApertura.Text = "";
+            txtDireccion.Text = "";
+            txtJurisdiccion.Text = "";
+            txtJuzgado.Text = "";
+            txtLiquidador.Text = "";
             txtNumero.Focus();
 
             ProcedimientoCargarGrilla();
@@ -106,6 +113,19 @@ namespace PrySanchezIE
         private void grilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void lblMostrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgvDatos.SelectedRows)
+            {
+                dgvDatos.Rows.Remove( row );
+            }
         }
     }
 }

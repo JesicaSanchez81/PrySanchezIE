@@ -23,5 +23,21 @@ namespace PrySanchezIE
 
             ventanaListarProveedor.ShowDialog();
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registroDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCargaProveedores frmCargaProveedores = new frmCargaProveedores();
+            frmCargaProveedores.ShowDialog();
+        }
     }
 }

@@ -49,7 +49,7 @@ namespace PrySanchezIE
 
         private void barraDeCarga_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
     }
 }
