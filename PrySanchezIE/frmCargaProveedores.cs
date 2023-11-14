@@ -109,10 +109,9 @@ namespace PrySanchezIE
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            foreach (DataGriedViewRow ro in dgvDatos.SelectedRows)
-            {
-                dgvDatos.Rows.Remove(row);
-            }
+            
+            
+            
         }
     }
 }

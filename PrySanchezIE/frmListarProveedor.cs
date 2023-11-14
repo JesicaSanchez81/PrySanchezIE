@@ -25,7 +25,7 @@ namespace PrySanchezIE
         private void frmListarProveedor_Load(object sender, EventArgs e)
         {
             // = new es instanciar un objeto de una clase
-            StreamReader leerArchivo = new StreamReader("datosproveedores.txt");
+            StreamReader leerArchivo = new StreamReader(@"../../BaseDatos/datosproveedores.txt");
 
             while (!leerArchivo.EndOfStream)
             {
@@ -44,7 +44,7 @@ namespace PrySanchezIE
             dgvDatos.Rows.Clear();
 
             //CARGAR LA GRILLA CON LOS DATOS
-            StreamReader leerArchivoGrilla = new StreamReader("baseproveedores.csv");
+            StreamReader leerArchivoGrilla = new StreamReader(@"../../BaseDatos/Listado de aseguradores.csv");
 
             while (!leerArchivoGrilla.EndOfStream)
             {                

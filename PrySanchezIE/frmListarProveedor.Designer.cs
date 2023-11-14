@@ -74,6 +74,7 @@
             this.Column8});
             this.dgvDatos.Location = new System.Drawing.Point(25, 296);
             this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDatos.Size = new System.Drawing.Size(828, 193);
             this.dgvDatos.TabIndex = 1;
             this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellContentClick);
