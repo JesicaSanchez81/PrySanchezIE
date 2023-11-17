@@ -16,7 +16,7 @@ namespace PrySanchezIE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmListarProveedor());
+            Application.Run(new frmIniciarSesion());
         }
     }
 }

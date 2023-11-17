@@ -19,7 +19,9 @@ namespace PrySanchezIE
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            
+            clsAccessBD conexion = new clsAccessBD();
+            conexion.ConectarBaseDatos();
+            conexion.TraerDatos(txtUsuario, txtContraseña);
         }
     }
 }
