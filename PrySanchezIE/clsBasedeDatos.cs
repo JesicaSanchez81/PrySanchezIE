@@ -24,7 +24,7 @@ namespace PrySanchezIE
         {
             estadoConexion = false;
             cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;" + "Data Source="
-                + rutaProyecto.FullName + "\\BaseDatos.accdb";
+                + rutaProyecto.FullName + "\\BaseDatos\\Usuarios.accdb";
         }
         public void ConectarBaseDatos()
         {
@@ -38,7 +38,7 @@ namespace PrySanchezIE
             bool usuarioValido = false;
             try
             {
-                string consulta = "SELECT * FROM Users WHERE Nombre = @Usuario AND Contraseña = @Contraseña";
+                string consulta = "SELECT * FROM Users WHERE usuario = @Usuario AND contraseña = @Contraseña";
 
                 using (OleDbCommand cmd = new OleDbCommand(consulta, conexionBD))
                 {
