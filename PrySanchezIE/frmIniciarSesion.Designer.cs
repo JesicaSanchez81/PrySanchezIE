@@ -28,71 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIniciarSesion));
+            this.txtNombreUsuario = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LblUsuario = new System.Windows.Forms.Label();
+            this.lblContraseña = new System.Windows.Forms.Label();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
+            this.btnRegistarse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // txtNombreUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(63, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario:";
+            this.txtNombreUsuario.Location = new System.Drawing.Point(141, 61);
+            this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreUsuario.TabIndex = 3;
+            this.txtNombreUsuario.TextChanged += new System.EventHandler(this.txtNombreUsuario_TextChanged);
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(63, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Contraseña:";
+            this.textBox1.Location = new System.Drawing.Point(141, 104);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
             // 
-            // btnIniciar
+            // LblUsuario
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(233, 152);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
-            this.btnIniciar.TabIndex = 3;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            this.LblUsuario.AutoSize = true;
+            this.LblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsuario.Location = new System.Drawing.Point(56, 66);
+            this.LblUsuario.Name = "LblUsuario";
+            this.LblUsuario.Size = new System.Drawing.Size(61, 15);
+            this.LblUsuario.TabIndex = 5;
+            this.LblUsuario.Text = "Usuario:";
             // 
-            // txtUsuario
+            // lblContraseña
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(147, 41);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuario.TabIndex = 5;
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Location = new System.Drawing.Point(56, 104);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(84, 15);
+            this.lblContraseña.TabIndex = 6;
+            this.lblContraseña.Text = "Contraseña:";
             // 
-            // txtContraseña
+            // btnIniciarSesion
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(147, 92);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(100, 20);
-            this.txtContraseña.TabIndex = 6;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(96, 160);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(129, 37);
+            this.btnIniciarSesion.TabIndex = 7;
+            this.btnIniciarSesion.Text = "Iniciar Sesion\r\n";
+            this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
+            // btnRegistarse
+            // 
+            this.btnRegistarse.Location = new System.Drawing.Point(96, 212);
+            this.btnRegistarse.Name = "btnRegistarse";
+            this.btnRegistarse.Size = new System.Drawing.Size(129, 39);
+            this.btnRegistarse.TabIndex = 8;
+            this.btnRegistarse.TabStop = false;
+            this.btnRegistarse.Text = "Registrarse";
+            this.btnRegistarse.UseVisualStyleBackColor = true;
+            this.btnRegistarse.Click += new System.EventHandler(this.btnRegistarse_Click);
             // 
             // frmIniciarSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(330, 212);
-            this.Controls.Add(this.txtContraseña);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.btnIniciar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(326, 295);
+            this.Controls.Add(this.btnRegistarse);
+            this.Controls.Add(this.btnIniciarSesion);
+            this.Controls.Add(this.lblContraseña);
+            this.Controls.Add(this.LblUsuario);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombreUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmIniciarSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmIniciarSesion";
+            this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,5 +119,12 @@
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Button btnRegistrarse;
+        private System.Windows.Forms.TextBox txtNombreUsuario;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label LblUsuario;
+        private System.Windows.Forms.Label lblContraseña;
+        private System.Windows.Forms.Button btnIniciarSesion;
+        private System.Windows.Forms.Button btnRegistarse;
     }
 }
